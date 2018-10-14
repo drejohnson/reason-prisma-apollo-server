@@ -1,0 +1,25 @@
+{
+  "name": "reason-apollo-server-prisma",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node src/Index.bs.js",
+    "dev": "npm-run-all --parallel start playground",
+    "watch:bsb": "bsb -make-world -w",
+    "build:bsb": "bsb -make-world",
+    "playground": "graphql playground"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "dependencies": {
+    "apollo-engine": "^1.1.2",
+    "apollo-server": "^2.1.0",
+    "graphql": "14.0.2",
+    "graphql-import": "^0.7.1",
+    "prisma-client-lib": "^1.19.0-beta.2"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.6",
+    "npm-run-all": "4.1.3"
+  }
+}
