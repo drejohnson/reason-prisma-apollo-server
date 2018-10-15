@@ -1,18 +1,13 @@
-# Basic Reason Template
+# GraphQL Api Server build with Prisma & Apollo Server
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+> Basic GraphQL Api Server build with [Prisma](https://www.prisma.io/) & [Apollo Server](https://github.com/apollographql/apollo-server) - based on the node-graphql example from [prisma-examples](https://github.com/prisma/prisma-examples/tree/master/node-graphql).
 
-# Build
-```
-npm run build
-```
+## Quick start
 
-# Build + Watch
+* Install dependencies: `yarn`
+* Start graphql server: run `yarn build:bsb` followed by `yarn start`, the server should be running at: http://localhost:4444.
 
-```
-npm run start
-```
+## Setup your own Prisma service: 
 
-
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
+* Delete the directories: `./prisma` and `./src/generated`
+* Follow [Setting up Prisma](https://www.prisma.io/docs/get-started/01-setting-up-prisma-new-database-a002/) guide to initialize and deploy a Prisma service. When asked choose "Javascript-client".
