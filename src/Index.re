@@ -1,3 +1,6 @@
+[@bs.module "graphql-import"]
+external importSchema: (. string) => string = "importSchema";
+
 module Server =
   ApolloServer.Make({
     type resolvers = Resolvers.t;
@@ -6,7 +9,7 @@ module Server =
     type datasources = Config.DataSources.t;
   });
 
-let typeDefs = Graphqlmport.importSchema(. "./src/schema.graphql");
+let typeDefs = importSchema(. "./src/schema.graphql");
 let server =
   Server.createApolloServer(
     ~typeDefs,
