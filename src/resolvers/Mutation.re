@@ -96,7 +96,7 @@ let mutation =
         ->updatePost_(
             postUpdateArgs(
               ~where=postUpdateInput(~id_=args->id_Get),
-              ~data=postDataInput(~isPublished_=false),
+              ~data=postDataInput(~isPublished_=true),
             ),
           ),
   );
